@@ -33,6 +33,9 @@
 #import <Foundation/Foundation.h>
 
 @interface CustomEasyOperation : NSObject
+
+
+
 #pragma mark block相关
 + (instancetype)operationWithCallBack:(void(^)(id obj))callBack;
 

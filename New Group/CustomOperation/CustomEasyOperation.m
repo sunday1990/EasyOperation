@@ -25,9 +25,9 @@ TestReturnCallBack _returnCallBack;
 }
 
 /**
-1、如果block中执行同步任务：block会等到执行完后才会置为nil。如果没有执行完失败了，那么block也要置为nil才可以，不然的话会造成循环应用
+1、如果block中执行同步任务：block会等到执行完后才会置为nil。如果没有执行完失败了，那么block也要置为nil才可以，不然的话会造成循环引用
  
-2、如果block中执行异步任务:block目前不会等任务执行完才置为nil，而是会立马置为nil，这样如果外界要回传值得话，可能会造成崩溃
+2、如果block中执行异步任务:block目前不会等任务执行完才置为nil，而是会立马置为nil，这样如果外界要回传值得话，可能会造成无法响应
 
  */
 + (void)operationWithCycleAutoBeNilCallBack:(void(^)(id obj))callBack{
