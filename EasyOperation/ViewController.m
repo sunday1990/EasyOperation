@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "DemoOperationViewController.h"
+#import "CustomEasyOperation.h"
 
 @interface ViewController ()
 
@@ -17,8 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    DemoOperationViewController *demoVC = [[DemoOperationViewController alloc]init];
+    [self presentViewController:demoVC animated:YES completion:nil];    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161C78BC206A7C4000FD0B4F /* DemoOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161C78BB206A7C4000FD0B4F /* DemoOperationViewController.m */; };
+		16A4045C206A3B6E001F1E8D /* CustomEasyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A4045B206A3B6E001F1E8D /* CustomEasyOperation.m */; };
+		16A4045F206A3BE3001F1E8D /* CustomEasyOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A4045E206A3BE3001F1E8D /* CustomEasyOperationQueue.m */; };
 		16BEDB972069CEF500FC52FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDB962069CEF500FC52FC /* AppDelegate.m */; };
 		16BEDB9A2069CEF500FC52FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDB992069CEF500FC52FC /* ViewController.m */; };
 		16BEDB9D2069CEF500FC52FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16BEDB9B2069CEF500FC52FC /* Main.storyboard */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		161C78BA206A7C4000FD0B4F /* DemoOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoOperationViewController.h; sourceTree = "<group>"; };
+		161C78BB206A7C4000FD0B4F /* DemoOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoOperationViewController.m; sourceTree = "<group>"; };
+		16A4045A206A3B6E001F1E8D /* CustomEasyOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomEasyOperation.h; sourceTree = "<group>"; };
+		16A4045B206A3B6E001F1E8D /* CustomEasyOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomEasyOperation.m; sourceTree = "<group>"; };
+		16A4045D206A3BE3001F1E8D /* CustomEasyOperationQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomEasyOperationQueue.h; sourceTree = "<group>"; };
+		16A4045E206A3BE3001F1E8D /* CustomEasyOperationQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomEasyOperationQueue.m; sourceTree = "<group>"; };
 		16BEDB922069CEF500FC52FC /* EasyOperation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyOperation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BEDB952069CEF500FC52FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		16BEDB962069CEF500FC52FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,9 +87,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16A40458206A3B3D001F1E8D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				16A40459206A3B52001F1E8D /* CustomOperation */,
+			);
+			name = Class;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		16A40459206A3B52001F1E8D /* CustomOperation */ = {
+			isa = PBXGroup;
+			children = (
+				16A4045A206A3B6E001F1E8D /* CustomEasyOperation.h */,
+				16A4045B206A3B6E001F1E8D /* CustomEasyOperation.m */,
+				16A4045D206A3BE3001F1E8D /* CustomEasyOperationQueue.h */,
+				16A4045E206A3BE3001F1E8D /* CustomEasyOperationQueue.m */,
+				161C78BA206A7C4000FD0B4F /* DemoOperationViewController.h */,
+				161C78BB206A7C4000FD0B4F /* DemoOperationViewController.m */,
+			);
+			path = CustomOperation;
+			sourceTree = "<group>";
+		};
 		16BEDB892069CEF500FC52FC = {
 			isa = PBXGroup;
 			children = (
+				16A40458206A3B3D001F1E8D /* Class */,
 				16BEDB942069CEF500FC52FC /* EasyOperation */,
 				16BEDBAD2069CEF600FC52FC /* EasyOperationTests */,
 				16BEDBB82069CEF600FC52FC /* EasyOperationUITests */,
@@ -265,8 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A4045F206A3BE3001F1E8D /* CustomEasyOperationQueue.m in Sources */,
+				161C78BC206A7C4000FD0B4F /* DemoOperationViewController.m in Sources */,
 				16BEDB9A2069CEF500FC52FC /* ViewController.m in Sources */,
 				16BEDBA52069CEF500FC52FC /* main.m in Sources */,
+				16A4045C206A3B6E001F1E8D /* CustomEasyOperation.m in Sources */,
 				16BEDB972069CEF500FC52FC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +466,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RU8Q2UZGJG;
 				INFOPLIST_FILE = EasyOperation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ccSunday.EasyOperation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +481,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RU8Q2UZGJG;
 				INFOPLIST_FILE = EasyOperation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ccSunday.EasyOperation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
