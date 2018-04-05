@@ -1,10 +1,12 @@
 //
-//  CustomEasyOperation.h
+//  EasyDispatchOperation.h
 //  EasyOperation
 //
-//  Created by ccSunday on 2018/3/27.
+//  Created by ccSunday on 2018/4/5.
 //  Copyright © 2018年 ccSunday. All rights reserved.
 //
+
+#import <Foundation/Foundation.h>
 /*
  1、任务与队列
  
@@ -30,31 +32,34 @@
  
  基于GCD的封装
  */
-#import <Foundation/Foundation.h>
-
-@interface CustomEasyOperation : NSObject
 
 
+/*
+ @private
+ id _private2;
+ void *_reserved2;
+ }
+ 
+ + (instancetype)blockOperationWithBlock:(void (^)(void))block;
+ 
+ - (void)addExecutionBlock:(void (^)(void))block;
+ @property (readonly, copy) NSArray<void (^)(void)> *executionBlocks;
+ 
+ */
 
-
-
-
-
-
-
-
-#pragma mark block相关
-+ (instancetype)operationWithCallBack:(void(^)(id obj))callBack;
-
-+ (void)operationWithNORetunCallBack:(void(^)(id obj))callBack;
+@interface EasyDispatchOperation : NSObject
 
 /**
- retainCycle会在block调用结束后自动打破，将block置为nil
-
- @param callBack 回调
+ 设置任务完成时候的代码块
  */
-+ (void)operationWithCycleAutoBeNilCallBack:(void(^)(id obj))callBack;
+@property (nonatomic, copy) void(^completionBlock)(void);
 
-+ (void)operationWithReturnValueCycleAutoBeNilCallBack:(NSString*(^)(id obj))callBack;
++ (instancetype)blockOperationWithBlock:(void(^)(void))block;
+
+- (instancetype)initWithTarget:(id)target selector:(SEL)sel object:(id)arg;
+
+- (void)start;
+
+- (void)cancel;
 
 @end

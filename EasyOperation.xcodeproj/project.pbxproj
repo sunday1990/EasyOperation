@@ -10,6 +10,8 @@
 		161C78BC206A7C4000FD0B4F /* DemoOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161C78BB206A7C4000FD0B4F /* DemoOperationViewController.m */; };
 		16A4045C206A3B6E001F1E8D /* CustomEasyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A4045B206A3B6E001F1E8D /* CustomEasyOperation.m */; };
 		16A4045F206A3BE3001F1E8D /* CustomEasyOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A4045E206A3BE3001F1E8D /* CustomEasyOperationQueue.m */; };
+		16B3A22020762D8C006FA102 /* EasyDispatchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B3A21F20762D8C006FA102 /* EasyDispatchOperation.m */; };
+		16B3A22320762E9C006FA102 /* EasyDispatchOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B3A22220762E9C006FA102 /* EasyDispatchOperationQueue.m */; };
 		16BEDB972069CEF500FC52FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDB962069CEF500FC52FC /* AppDelegate.m */; };
 		16BEDB9A2069CEF500FC52FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDB992069CEF500FC52FC /* ViewController.m */; };
 		16BEDB9D2069CEF500FC52FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16BEDB9B2069CEF500FC52FC /* Main.storyboard */; };
@@ -44,6 +46,10 @@
 		16A4045B206A3B6E001F1E8D /* CustomEasyOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomEasyOperation.m; sourceTree = "<group>"; };
 		16A4045D206A3BE3001F1E8D /* CustomEasyOperationQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomEasyOperationQueue.h; sourceTree = "<group>"; };
 		16A4045E206A3BE3001F1E8D /* CustomEasyOperationQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomEasyOperationQueue.m; sourceTree = "<group>"; };
+		16B3A21E20762D8C006FA102 /* EasyDispatchOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyDispatchOperation.h; sourceTree = "<group>"; };
+		16B3A21F20762D8C006FA102 /* EasyDispatchOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyDispatchOperation.m; sourceTree = "<group>"; };
+		16B3A22120762E9C006FA102 /* EasyDispatchOperationQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyDispatchOperationQueue.h; sourceTree = "<group>"; };
+		16B3A22220762E9C006FA102 /* EasyDispatchOperationQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyDispatchOperationQueue.m; sourceTree = "<group>"; };
 		16BEDB922069CEF500FC52FC /* EasyOperation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyOperation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BEDB952069CEF500FC52FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		16BEDB962069CEF500FC52FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +111,10 @@
 				16A4045E206A3BE3001F1E8D /* CustomEasyOperationQueue.m */,
 				161C78BA206A7C4000FD0B4F /* DemoOperationViewController.h */,
 				161C78BB206A7C4000FD0B4F /* DemoOperationViewController.m */,
+				16B3A21E20762D8C006FA102 /* EasyDispatchOperation.h */,
+				16B3A21F20762D8C006FA102 /* EasyDispatchOperation.m */,
+				16B3A22120762E9C006FA102 /* EasyDispatchOperationQueue.h */,
+				16B3A22220762E9C006FA102 /* EasyDispatchOperationQueue.m */,
 			);
 			path = CustomOperation;
 			sourceTree = "<group>";
@@ -302,7 +312,9 @@
 				16BEDB9A2069CEF500FC52FC /* ViewController.m in Sources */,
 				16BEDBA52069CEF500FC52FC /* main.m in Sources */,
 				16A4045C206A3B6E001F1E8D /* CustomEasyOperation.m in Sources */,
+				16B3A22020762D8C006FA102 /* EasyDispatchOperation.m in Sources */,
 				16BEDB972069CEF500FC52FC /* AppDelegate.m in Sources */,
+				16B3A22320762E9C006FA102 /* EasyDispatchOperationQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
